@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>{{SERVER_MSG}}</h1>
+
+    <form action="{{url_for('chosen_fn')}}" method="post" class="pokemon_choices_cls" >
+        <input type="text" placeholder="Adventurer's Name"
+        autofocus autocomplete="off" name="NAME" required>
+        
+            <select name="POKEMON" id="pokemon_id" required>
+                <option value="choose" selected disabled>Choose a pokemon</option>
+    
+                {% for pokemon in ALLOWED_POKEMON %}
+                    <option value={{pokemon}}>{{pokemon}}</option>
+                {% endfor %}
+    
+            </select><br><br>
+            
+            <!-- <input type="submit" value="Start Adventure!🌄"> -->
+            <button type="submit" class="btn btn-primary">Begin Adventure!🏊‍♂️🌄</button>  
+    </form>
+
+{% endblock %}

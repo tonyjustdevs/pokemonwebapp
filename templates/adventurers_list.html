@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1>{{SERVER_MSG}}</h1>
+<ul>
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope = "col">Hero</th>
+                <th scope = "col">Pokemon</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for HERO in ADVENTURERS_LIST %}
+                <tr>
+                    <td>{{HERO[1]}}</td>
+                    <td>{{HERO[2]}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</ul>
+{% endblock %}

@@ -1,0 +1,19 @@
+body {
+    /* background-color: darkslategrey; */
+    background-color: #003A70;
+    
+    color: #3D7DCA;
+    font-weight: bolder;
+}
+
+h1 {
+    color: #FFCB05;
+    font-weight: bolder;
+}
+
+.pokemon_choices_cls {
+    color: #FFCB05;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: smaller;
+    font-style: oblique;
+}
